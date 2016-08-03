@@ -1,0 +1,8 @@
+<div class="email" ng-repeat="note in notes" ng-init="checked = false" ng-click="checked = !checked">	
+		<span class="from">{{ note.title }}</span>
+		<span class="subject">{{ note.contents }}</span>	   
+		<span class="animate-hide" ng-show="checked" > 
+			<p align="center">~..*..~</p>
+			<p class="message"> <i>Detailed notes and messages </i></p>
+		</span>		
+</div>

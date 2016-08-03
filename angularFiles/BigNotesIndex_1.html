@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <script src="js/vendor/angular.min.js"></script>
+	<script src= "https://code.angularjs.org/1.2.28/angular-route.min.js" ></script>
+	<script src= "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.0/angular-animate.js" ></script>
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	
+	
+  </head>
+  <body ng-app="NotesApp1">
+    <div class="header">
+      <div class="container">
+        <img src="img/notesIcon.jpg" width="140" height="150">
+      </div>
+    </div>
+
+    <div class="main"  ng-controller="NotesHomeController1">
+      <div class="container">	 
+		<p align="right"><button class="from" ng-click="addNewNote()">Add a New Note</button> </p>
+		<div class="addNote" >
+		 <input type="text" ng-model="input1"/>
+		 <input type="text" ng-model="input2" />
+		 <button ng-click="submitText()">Submit</button>
+		</div>
+  
+		<div class="email" ng-repeat="note in notes1" ng-init="checked = false" ng-click="checked = !checked">		
+			<span class="from">{{ note.title }}</span>
+			<span class="subject">{{ note.contents }}</span>	   
+			<span class="animate-hide" ng-show="checked" > 
+				<p align="center">~..*..~</p>
+				<p class="message"> <i>Detailed notes and messages ppppppppppwwwwwwwwwwwww </i></p>
+			</span>		
+		</div>
+      </div>
+    </div>
+
+    <!-- Modules -->
+    <script src="js/app1.js"></script>
+
+    <!-- Controllers -->
+    <script src="js/controllers/NotesHomeController1.js"></script>
+
+    <!-- Services -->
+    <script src="js/services/notes1.js"></script>
+	
+	
+
+	 <!-- http://localhost:8080/bignotes/angularFiles/BigNotesIndex_1.html  -->
+  </body>
+</html>

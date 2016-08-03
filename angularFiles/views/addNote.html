@@ -1,0 +1,38 @@
+<form class="form-horizontal" >
+  <fieldset>
+    <legend>Add a new Note</legend>
+    <div class="form-group">
+      <label for="title" class="col-lg-2 control-label">Title</label>
+      <div class="col-lg-10">
+        <input type="text"  ng-minlength=2 class="form-control" id="title" placeholder="Title" ng-model="formInfo.title">
+      </div>
+    </div>
+    <div class="form-group">
+    <label for="contents" class="col-lg-2 control-label">Contents</label>
+      <div class="col-lg-10">
+        <input type="text" required class="form-control" id="contents" placeholder="Contents" ng-model="formInfo.contents" >
+      </div>
+    </div>
+    <!--div class="form-group">
+      <label for="textAreaDetailedNotes" class="col-lg-2 control-label">Detailed Notes</label>
+      <div class="col-lg-10">
+        <textarea class="form-control" rows="3" id="textAreaDetailedNotes" placeholder="Detailed Notes" ng-model="formInfo.textAreaDetailedNotes"></textarea>
+        <span class="help-block">Enter as much information you wish to note here </span>
+      </div>
+    </div-->
+    
+    <div class="form-group">
+      <div class="col-lg-10 col-lg-offset-2">
+        <button type="reset" class="btn btn-default">Cancel</button>
+        <button type="submit" class="btn btn-primary" ng-click="saveTheNote()">Submit</button>
+      </div>
+    </div>
+	<a class="back" href="#/note">Back To Notes List</a>
+	<p> {{ msg }}</p>
+	<br><br>
+	<span ng-show="inputTitleReq">{{inputTitleReq}}</span>
+	<span ng-show="inputContentsReq">{{inputContentsReq}}</span>
+	<span ng-show="textAreaDetailedNotesReq">{{textAreaDetailedNotesReq}}</span>
+	  <span>{{formInfo}}</span>
+  </fieldset>
+</form>

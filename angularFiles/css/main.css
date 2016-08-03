@@ -1,0 +1,163 @@
+body, html {
+    background: #f9f9f9;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+.red {
+    background-color:#FF0000;
+}
+
+.header {
+    background: #aa08ff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.header img {
+    margin: 20px auto;  
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header ul {
+  list-style: none;
+}
+
+.header li {
+  display: inline;
+  margin-right: 30px;
+}
+
+.main {
+    margin: 40px 0;
+}
+
+.email {
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-size: 18px;
+    margin: 0 0 8px;
+    padding: 20px 0;
+}
+
+.email:hover {
+    background: #fcfcfc;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.email span {
+    display: inline-block;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    text-overflow: ellipsis;
+}
+
+.from {
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 2%;
+    width: 20%;
+}
+
+.subject {
+    width: 65%;
+}
+
+.date {
+    font-size: 14px;
+    padding-right: 2%;
+    text-align: right;
+    text-overflow: ellipsis;
+    width: 15%;
+}
+
+.footer {
+  background:#000;
+  padding:60px 0;
+}
+
+.footer h3 {
+  color:#fff;
+  font-size:18px;
+  font-weight:300; 
+}
+
+.footer ul {
+  color:#0393ff;
+  list-style:none;
+  padding-left:0px; 
+}
+
+p {
+  margin: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+.articles {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.article {
+  color: #222;
+  background: rgba(255,255,255,.9);
+  border-spacing: 2px;
+  border-color: blue;
+  font-family: arial,sans-serif;
+  border-bottom: 1px #e5e5e5 solid;
+}
+
+.current .item {
+  background: rgba(206,220,206,.9);
+}
+
+.item {
+  cursor: pointer;
+  padding-top: 7px;
+  padding-bottom: 7px;
+ 
+}
+
+.item .source {
+  margin-left: 20px;
+}
+
+.item .title {
+  font-weight: bold;
+}
+
+.item .pubdate {
+  margin-right: 20px;
+}
+
+.item .pubdate {
+  text-align: right; 
+}
+
+.description {
+  display: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.description h1 {
+  margin-top: 0px;
+  font-size: 23px;
+}
+.animate-hide {
+  transition: all linear .1s;
+  opacity: 1;
+}
+
+.animate-hide.ng-hide {
+  line-height: 0;
+  opacity: 0;
+}
+
+
